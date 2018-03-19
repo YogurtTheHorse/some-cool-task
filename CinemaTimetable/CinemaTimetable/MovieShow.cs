@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace CinemaTimetable {
     public class MovieShow: IEquatable<MovieShow> {
         public Movie Movie { get; set; }
-        int Hall { get; set; }
+        public int Hall { get; set; }
 
-        DateTime Date;
-        DayOfWeek DayOfWeek { get => Date.DayOfWeek; }
+        public DateTime Date;
+        public DayOfWeek DayOfWeek { get => Date.DayOfWeek; }
          
 
         public MovieShow(Movie movie, DateTime date, int hall) {
