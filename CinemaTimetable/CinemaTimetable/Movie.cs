@@ -2,7 +2,7 @@
 using System.Globalization;
 
 namespace CinemaTimetable {
-	public class Movie {
+	public class Movie : IEquatable<Movie> {
 		public string MovieName { get; }
 		public TimeSpan Duration { get; }
 		public int Year { get; }
@@ -25,6 +25,21 @@ namespace CinemaTimetable {
 
 		public override string ToString() {
 			return $"{MovieName} {Year}";
+		}
+
+		public bool Equals(Movie other) {
+			return
+				other != null &&
+				other.MovieName == MovieName &&
+				other.Year == Year;
+		}
+
+		public override bool Equals(object obj) {
+			if (obj is Movie movie) {
+				return Equals(movie);
+			} else {
+				return base.Equals(obj);
+			}
 		}
 	}
 }
