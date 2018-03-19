@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaTimetable", "CinemaTimetable\CinemaTimetable.csproj", "{75737B57-4391-4539-925D-83B6AD226887}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{16B2D9E2-19E2-42E9-ACB4-6E26371D1284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaTimetable", "CinemaTimetable\CinemaTimetable.csproj", "{FD87227A-5BA1-4EEF-9B25-02B1AAC11922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75737B57-4391-4539-925D-83B6AD226887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75737B57-4391-4539-925D-83B6AD226887}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75737B57-4391-4539-925D-83B6AD226887}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75737B57-4391-4539-925D-83B6AD226887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B2D9E2-19E2-42E9-ACB4-6E26371D1284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B2D9E2-19E2-42E9-ACB4-6E26371D1284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B2D9E2-19E2-42E9-ACB4-6E26371D1284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B2D9E2-19E2-42E9-ACB4-6E26371D1284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD87227A-5BA1-4EEF-9B25-02B1AAC11922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD87227A-5BA1-4EEF-9B25-02B1AAC11922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD87227A-5BA1-4EEF-9B25-02B1AAC11922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD87227A-5BA1-4EEF-9B25-02B1AAC11922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
