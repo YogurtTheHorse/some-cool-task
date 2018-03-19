@@ -41,5 +41,9 @@ namespace CinemaTimetable {
 				return base.Equals(obj);
 			}
 		}
-	}
+
+        public override int GetHashCode() {
+            return unchecked(MovieName.GetHashCode() ^ Year.GetHashCode());
+        }
+    }
 }
