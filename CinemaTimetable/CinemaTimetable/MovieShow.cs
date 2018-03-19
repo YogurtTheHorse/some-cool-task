@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CinemaTimetable {
     public class MovieShow: IEquatable<MovieShow> {
-        public Movie Movie { get; set; }
-        public int Hall { get; set; }
+        public Movie Movie { get; }
+        public int Hall { get; }
 
-        public TimeSpan TimeOfDay { get; set; }
-        public DayOfWeek DayOfWeek { get; set; }
+        public TimeSpan TimeOfDay { get; }
+        public DayOfWeek DayOfWeek { get; }
          
 
         public MovieShow(Movie movie, TimeSpan timeOfDay, DayOfWeek dayOfWeek, int hall) {
@@ -25,7 +25,11 @@ namespace CinemaTimetable {
                 return false;
             }
 
-            return (Movie == second.Movie) && (Date == second.Date) && (Hall == second.Hall);
+            return 
+                Movie == second.Movie && 
+                TimeOfDay == second.TimeOfDay && 
+                DayOfWeek == second.DayOfWeek && 
+                Hall == second.Hall;
         }
     }
 }
