@@ -9,13 +9,14 @@ namespace CinemaTimetable {
         public Movie Movie { get; set; }
         public int Hall { get; set; }
 
-        public DateTime Date;
-        public DayOfWeek DayOfWeek { get => Date.DayOfWeek; }
+        public TimeSpan TimeOfDay { get; set; }
+        public DayOfWeek DayOfWeek { get; set; }
          
 
-        public MovieShow(Movie movie, DateTime date, int hall) {
+        public MovieShow(Movie movie, TimeSpan timeOfDay, DayOfWeek dayOfWeek, int hall) {
             Movie = movie;
-            Date = date;
+            TimeOfDay = timeOfDay;
+            DayOfWeek = dayOfWeek;
             Hall = hall;
         }
 
