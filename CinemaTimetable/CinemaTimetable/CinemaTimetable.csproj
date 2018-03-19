@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie.cs" />
+    <Compile Include="MovieRating.cs" />
     <Compile Include="MovieShow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
