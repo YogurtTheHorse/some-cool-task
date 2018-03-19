@@ -30,6 +30,6 @@ namespace CinemaTimetable {
 
 		public bool Remove(MovieShow item) => _shows.Remove;
 
-		IEnumerator IEnumerable.GetEnumerator() => _shows.GetEnumerator;
+		public IEnumerator IEnumerable.GetEnumerator() => _shows.GetEnumerator;
 	}
 }
